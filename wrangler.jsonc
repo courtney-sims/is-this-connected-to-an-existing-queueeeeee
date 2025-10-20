@@ -1,0 +1,26 @@
+/**
+ * For more details on how to configure Wrangler, refer to:
+ * https://developers.cloudflare.com/workers/wrangler/configuration/
+ */
+{
+	"$schema": "node_modules/wrangler/config-schema.json",
+	"name": "is-this-connected-to-an-existing-queueeeeee",
+	"main": "src/index.ts",
+	"compatibility_date": "2025-08-26",
+	"observability": {
+		"enabled": true
+	},
+	"queues": {
+		"consumers": [
+			{
+				"queue": "my-queueeeeee"
+			}
+		],
+		"producers": [
+			{
+				"binding": "MY_QUEUE",
+				"queue": "my-queueeeeee"
+			}
+		]
+	}
+}
